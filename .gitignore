@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.gem
 *.rbc
 .bundle
@@ -16,3 +17,23 @@ tmp
 .yardoc
 _yardoc
 doc/
+=======
+# Object files
+*.o
+*.ko
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+>>>>>>> 894baaea3eac2a73ed18b60cd704a69541a4f7f2
