@@ -4,6 +4,7 @@
 	require 'tempfile'
 	puts 'About to daemonize.'
 	log = Tempfile.new('daemon.log')
+	Process.daemon
 	loop do
 	  log.puts "I'm a daemon, doin' daemon things."
 	  log.flush
