@@ -20,8 +20,8 @@
 	1.upto(list.size)  do |i|
 	comodin = list[i]
 	#for (i = 0; i < list.size; i++)
-		if comodin >= 0
-			if comodin < list.size
+		if (comodin >= 1)
+			if (comodin < list.size)
 				time = rand(1)
 				sleep time
 				#puts "Que te pongo" clientes[list[i]]
