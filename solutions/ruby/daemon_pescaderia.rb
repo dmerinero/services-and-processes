@@ -3,26 +3,33 @@
 
 	require 'thread'
 	puts 'I am running.'
+
 	clientes = [ 'elena','ana','javier','gregorio','vicente','paz']
 
 	list = []
 	posicion = 0
-		Thread.new do puts "otro"
-		sleep 5
-		puts "yo wel primer hilo ya termino, ahora el siguiente viene"
- end
-		h=Thread.new do
-		sleep 7
-		g=File.open("#{Dir.pwd}/texto", "w")
-		puts "hhhhhh"
-		#while posicion < 15
-			puts"leches"			
+	h=Thread.new do
+		while posicion < 15			
 			posicion += 1
 			list[posicion] = rand(clientes.size)
-			g.puts 'hey! list[posicion]'
-			 g.flush
-		#endi
-		
+			#puts "wolololololololololololololololo"
+			#puts "* %s tendrá el número %i", clientes[list[posicion]], posicion
+		end
 	end
-h.join
+	h.join
+	1.upto(list.size)  do |i|
+	comodin = list[i]
+	#for (i = 0; i < list.size; i++)
+		if comodin >= 0
+			if comodin < list.size
+				time = rand(1)
+				sleep time
+				#puts "Que te pongo" clientes[list[i]]
+			else 
+				puts "Algo ha ido mal"
+			end
+		else
+			puts "Algo ha ido mal"
+	end
+end
 	puts 'I just finish'
