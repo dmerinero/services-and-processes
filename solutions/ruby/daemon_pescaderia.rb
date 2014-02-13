@@ -17,7 +17,7 @@
 	h.join
 	1.upto(list.size-1)  do |i|
 		comodin = list[i]
-		time = rand(1)
+		time = rand(5)
 		sleep time
 		puts "Que te pongo  #{clientes[list[i]]}" 
 	end
